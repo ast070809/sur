@@ -6,7 +6,7 @@
 			Sign up
 .row
 	.span6.offset6
-		=form_for(@user) do |f|
+		=form_tag signup_user_path, method: :get do
 			.input-control.text
 				= f.label :name
 				= f.text_field :name
